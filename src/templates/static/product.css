@@ -1,0 +1,60 @@
+* {
+   box-sizing: border-box;
+}
+
+.product-item {
+   width: 200px;
+   height: 260px;
+   border-radius: 10px;
+   margin: 10em 35em;
+   padding: 10px 10px 5px 10px;
+   border: 1px solid grey;
+   background: white;
+   font-family: "Open Sans";
+   overflow: hidden;
+   transition: .4s linear;
+}
+.product-img {
+  height: 96px;
+  width: 96px;
+  transition: 0.4s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product-img:hover {
+   transform: scale(1.1);
+}
+.product-img img {
+   display: block;
+   width: 100%;
+}
+
+/* stats  */
+.border {
+padding: 0;
+list-style: none;
+}
+.border li {
+font-family: "Trebuchet MS", "Lucida Sans";
+padding: 1px 2px ;
+margin-bottom: 5px;
+border-radius: 5px;
+border-left: 5px solid #f05d22;
+box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+     -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+font-size: 14px;
+letter-spacing: 2px;
+transition: 0.2s all linear;
+}
+.border li:nth-child(2){border-color: #8bc63e;}
+.border li:nth-child(3){border-color: #fcba30;}
+.border li:nth-child(4){border-color: #1ccfc9;}
+.border li:nth-child(5){border-color: #493224;}
+.border li:hover {border-left: 10px solid transparent;}
+.border li:nth-child(1):hover {border-right: 5px solid #f05d22;}
+.border li:nth-child(2):hover {border-right: 5px solid #8bc63e;}
+.border li:nth-child(3):hover {border-right: 5px solid #fcba30;}
+.border li:nth-child(4):hover {border-right: 5px solid #1ccfc9;}
+.border li:nth-child(5):hover {border-right: 5px solid #493224;}

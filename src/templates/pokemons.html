@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type='text/css' href="{% static 'index.css' %}?version=2">
+
+
+  <title>Pokemons</title>
+</head>
+<body>
+  <div class='bg_pokemons_page'>
+  {% include 'navbar.html' %}
+
+  <div class="items">
+
+  {% for i in all %}
+  <div class="product-item">
+    <div class="product-img">
+
+        <img src="{% include image_folder %}">
+    </div>
+      <ul class="border">
+          <li>Name:{{ i.name}}</li>
+          <li>Height: {{ i.height }}</li>
+          <li>Weight: {{ i.weight }}</li>
+          <li>Types: {{ i.types }}</li>
+          <li>Abilities: {{ i.abilities }} </li>
+      </ul>
+    </div>
+  {% endfor %}
+
+
+  </div>
+  </div>
+
+  </body>
+  </html>
