@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type='text/css' href="{% static 'index.css' %}?version=2">
+  <link rel="stylesheet" type='text/css' href="{% static 'index.css' %}?version=1">
 
 
   <title>Pokemons</title>
@@ -15,12 +15,11 @@
   {% include 'navbar.html' %}
 
   <div class="items">
-
   {% for i in all %}
   <div class="product-item">
     <div class="product-img">
+        <img src={% static "/pictures/1.png" %}/>
 
-        <img src="{% include image_folder %}">
     </div>
       <ul class="border">
           <li>Name:{{ i.name}}</li>
