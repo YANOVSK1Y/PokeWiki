@@ -12,9 +12,9 @@ def home_view(request, *args, **kwargs):
 
 def pokemons_view(request, *args, **kwargs):
     pokemons = Pokemons.objects.all()
-    image_counter = 1118
+    images = [str(i) + '.png' for i in range(1, 4)]
     return render(request, 'pokemons.html', {"all": pokemons,
-    "image_folder": folder})
+    "img_name": images})
 
 
 def about_view(request, *args, **kwargs):
