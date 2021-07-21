@@ -14,22 +14,34 @@
   <div class='bg_pokemons_page'>
   {% include 'navbar.html' %}
 
-  <div class="items">
-  {% for i in all %}
-  <div class="product-item">
-    <div class="product-img">
-        <img src={% static "/pictures/1.png" %}/>
 
-    </div>
-      <ul class="border">
-          <li>Name:{{ i.name}}</li>
-          <li>Height: {{ i.height }}</li>
-          <li>Weight: {{ i.weight }}</li>
-          <li>Types: {{ i.types }}</li>
-          <li>Abilities: {{ i.abilities }} </li>
-      </ul>
-    </div>
-  {% endfor %}
+
+      <div class="items">
+      {% for i in all %}
+      <div class="product-item">
+        <div class="product-img">
+          {% if i.picture_status == True %}
+            <img src="{% get_static_prefix %}pictures/{{ i.id }}"/>
+
+          {% elif i.picture_status == False %}
+            <p>We don'y have this pic.</p>
+            <o>{{ i.id }}</o>
+          {% endif %}
+            <!-- <img src={% static "/pictures/{{ load i.id }}.png" %}/> -->
+
+            <!-- <p>{{ i.id }}.png</p> -->
+        </div>
+          <ul class="border">
+              <li>Name:{{ i.name}}</li>
+              <li>Height: {{ i.height }}</li>
+              <li>Weight: {{ i.weight }}</li>
+              <li>Types: {{ i.types }}</li>
+              <li>Abilities: {{ i.abilities }} </li>
+          </ul>
+        </div>
+
+      {% endfor %}
+
 
 
   </div>

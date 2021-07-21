@@ -5,15 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type='text/css' href="{% static 'index.css' %}?version=2">
+  <link rel="stylesheet" type='text/css' href="{% static 'index.css' %}?version=1">
 
   <title>POKEABOUT</title>
 </head>
 <body>
   <div class='bg_about_page'>
-  {% include 'navbar.html' %}
+
+      {% include 'navbar.html' %}
+      <div class='about_page_text'>
+          <h1>Enjoy our product.</h1>
+          <h2>Heve fun and find your own pokemo.</h2>
+          <h3>Post: pokemons@poke.com</h3>
+          <h3>inst: @pokemon_world</h3>
+
+      </div>
+
+  </div>
 
 
-</div>
 </body>
 </html>
