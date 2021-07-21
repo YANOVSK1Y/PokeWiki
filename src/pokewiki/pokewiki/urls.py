@@ -25,3 +25,9 @@ urlpatterns = [
     path('pokemons/', pokemons_view, name='pokemons'),
     path('about/', about_view, name='about')
 ]
+#
+# for i in data:
+#     if os.path.exists(str(i[0])+'.png'):
+#         Pokemons.objects.create(id=str(i[0])+'.png', name=str(i[1]), height=i[2], weight=i[3], types=str(i[4]), abilities=str(i[5]), picture_status=True)
+#     else:
+#         Pokemons.objects.create(id=str(i[0])+'.png', name=str(i[1]), height=i[2], weight=i[3], types=str(i[4]), abilities=str(i[5]), picture_status=False)
