@@ -1,5 +1,11 @@
 ## PokoWiki portal for people who like's pokemons.
 You can have a good time and see all the statistics of all Pokemon.
+$HOME PAGE FOR NEW USERS
+![Screenshot from 2021-07-21 14-09-30_001](https://user-images.githubusercontent.com/48081693/126482207-6a575fb3-21dc-4eb7-a54f-0b27c7b0b877.png)
+#LIST WITH ALL POKEMONS
+![Screenshot from 2021-07-21 14-09-00_001](https://user-images.githubusercontent.com/48081693/126482218-218dec29-f185-4041-9f90-ab5175674921.png)
+#CONTACT ASS AT
+![Screenshot from 2021-07-21 14-29-12_001](https://user-images.githubusercontent.com/48081693/126482226-a111bd9c-9ea6-4788-8146-7082beec4921.png)
 
 #© 2021 Pokémon. © 1995-2021 Nintendo / Creatures Inc./GAME FREAK Inc. Pokémon, Pokémon character names, Nintendo Switch, Nintendo 3DS, Nintendo DS, Wii, Wii U, and WiiWare are trademarks of Nintendo. Other trademarks are property of their respective owners.
 
